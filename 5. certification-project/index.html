@@ -1,0 +1,56 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Job Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Job Application Form</h1>
+        <p id="description">Thank you for your interest in working with us.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name: <input class="block" type="text" id="name" name="name"
+                        placeholder="Enter your name" required /> </label>
+                <label id="email-label" for="email"> Email: <input class="block" id="email" type="email" name="email"
+                        placeholder="Enter your email" required /> </label>
+                <label id="number-label" for="age">Age (optional)<input class="block" id="number" type="number" min="19"
+                        max="120" name="age" placeholder="Age" /></label>
+            </fieldset>
+            <fieldset>
+                <label for="position">What position are you applying for?
+                    <select id="dropdown" name="position">
+                        <option value="">-Select-</option>
+                        <option value="1">Front End</option>
+                        <option value="2">Back End</option>
+                        <option value="3">Full Stack</option>
+                    </select>
+                </label>
+                <label class="margin">What is your current employee status?</label>
+                <label for="employed"><input id="employed" type="radio" name="status" value="Employed"
+                        checked />Employed</label>
+                <label for="self-employed"><input id="self-employed" type="radio" name="status"
+                        value="Self-Employed" />Self-Employed</label>
+                <label for="unemployed"><input id="unemployed" type="radio" name="status"
+                        value="Unemployed" />Unemployed</label>
+                <label for="student"><input id="student" type="radio" name="status" value="Student" />Student</label>
+            </fieldset>
+            <fieldset>
+                <label class="margin">What have you been working with?</label>
+                <label for="html"><input type="checkbox" id="html" name="experience" value="html" />HTML</label>
+                <label for="css"><input type="checkbox" id="css" name="experience" value="css" />CSS</label>
+                <label for="js"><input type="checkbox" id="js" name="experience" value="js" />JavaScript</label>
+                <label for="react"><input type="checkbox" id="react" name="experience" value="react" />React</label>
+                <label for="angular"><input type="checkbox" id="angular" name="experience"
+                        value="angular" />Angular</label>
+                <label for="python"><input type="checkbox" id="python" name="experience" value="python" />Python</label>
+                <label for="additional" class="margin">Additional information</label>
+                <textarea id="additional" name="additional" rows="5" cols="30"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </body>
+
+    </html>
