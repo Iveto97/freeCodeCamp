@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a href="#CSS_Introduction" class="nav-link">CSS Introduction</a></li>
+            <li><a href="#CSS_Syntax" class="nav-link">CSS Syntax</a></li>
+            <li><a href="#CSS_Selectors" class="nav-link">CSS Selectors</a></li>
+            <li><a href="#CSS_Comments" class="nav-link">CSS Comments</a></li>
+            <li><a href="#CSS_Specificity" class="nav-link">CSS Specificity</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+
+        <section id="CSS_Introduction" class="main-section">
+            <header>CSS Introduction</header>
+            <p>CSS is the language we use to style a Web page.</p>
+            <h3>What is CSS?</h3>
+            <p>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets</li>
+                <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li>External stylesheets are stored in CSS files</li>
+            </ul>
+            </p>
+            <p class="code">
+                <code>
+                    body {</br>
+                   <span class="tab">background-color: lightblue;</span></br>
+                  }
+                </code>
+            </p>
+        </section>
+        <section id="CSS_Syntax" class="main-section">
+            <header>CSS Syntax</header>
+            <p>A CSS rule consists of a selector and a declaration block.</p>
+            <h3>CSS Syntax</h3>
+            <img src="./syntax.PNG" alt="CSS syntax" class="syntax" />
+            <p>
+            <ul>
+                <li>The selector points to the HTML element you want to style.</li>
+                <li>The declaration block contains one or more declarations separated by semicolons.</li>
+                <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+                <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by
+                    curly braces.</li>
+            </ul>
+            </p>
+        </section>
+        <section id="CSS_Selectors" class="main-section">
+            <header>CSS Selectors</header>
+            <p>A CSS selector selects the HTML element(s) you want to style.</p>
+            <h3>CSS Selectors</h3>
+            <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+            <p>
+                We can divide CSS selectors into five categories:
+            <ul>
+                <li>Simple selectors (select elements based on name, id, class)</li>
+                <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+                <li>Pseudo-class selectors (select elements based on a certain state)</li>
+                <li>Pseudo-elements selectors (select and style a part of an element)</li>
+                <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            </ul>
+            </p>
+        </section>
+        <section id="CSS_Comments" class="main-section">
+            <header>CSS Comments</header>
+            <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+            <h3>CSS Comments</h3>
+            <p>Comments are used to explain the code, and may help when you edit the source code at a later date.
+                Comments are ignored by browsers.</p>
+            <p>A CSS comment is placed inside the <<code> style </code>> element, and
+                    starts with <code>/*</code> and ends with <code>*/</code> :</p>
+            <p>You can add comments wherever you want in the code:</p>
+            <div class="pair-codes">
+            <p><code>
+                /* This is a single-line comment */</br>
+                p {</br>
+                <span class="tab">color: red;</span></br>
+                }
+            </code>
+            </p>
+            <p >
+                <code>
+                p {</br>
+                   <span class="tab">color: red;</span> color: red;  /* Set text color to red */</br>
+                  }
+            </code>
+            </p>
+        </div>
+        </section>
+        <section id="CSS_Specificity" class="main-section">
+            <header>CSS Specificity</header>
+            <p>If there are two or more CSS rules that point to the same element, the selector with the highest
+                specificity value will "win", and its style declaration will be applied to that HTML element.</p>
+            <p>Think of specificity as a score/rank that determines which style declaration is ultimately applied to an
+                element.</p>
+        </section>
+    </main>
+</body>
+
+</html>

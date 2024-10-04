@@ -1,0 +1,93 @@
+@media screen and (min-width: 480px) {
+    #navbar {width: 300px; float: left;}
+    #main-doc {margin-left: 100px;}
+}
+
+#navbar {
+    position: fixed;
+    left: 0px;
+    border-right: 2px solid gray;
+    display: inline;
+}
+
+#navbar > header {
+    padding: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+#navbar li {
+    border-bottom: 1px solid gray;
+    padding: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#navbar li:hover {
+    background-color: #4CAF50;
+    box-shadow: 3px 2px 8px;
+}
+
+#navbar  li > a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+header {
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#navbar > header {
+    text-decoration: none;
+}
+
+#main-doc {
+    position: absolute;
+    left: 25%;
+}
+
+.code {
+    display: block;
+    margin: auto;
+    width: 300px;
+    background-color:  #f0f5f5;
+    border: 2px solid #4CAF50;
+    box-shadow: 3px 2px 8px;
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+
+.syntax {
+    border: 2px solid gray;
+    display: block;
+    margin: auto;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.pair-codes {
+    display: inline-flex;
+    margin: auto;
+}
+
+.pair-codes > p {
+    width: 300px;
+    background-color:  #f0f5f5;
+    border: 2px solid #4CAF50;
+    box-shadow: 3px 2px 8px;
+    padding: 50px 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
