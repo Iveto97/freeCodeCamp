@@ -1,0 +1,522 @@
+:root {
+    --white-color: white;
+    --black-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f9f2ec;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Monaco", Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Logo section */
+
+.logo {
+    display: flex;
+    height: 100vh;
+    background-image: url("./oura.jpg");
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header {
+    margin: auto auto;
+}
+
+#header-img {
+    display: inline;
+    min-width: 2em;
+    max-width: 6em;
+    height: auto;
+}
+
+#nav-bar {
+    display: flex;
+    position: fixed;
+    padding: 1.5em;
+    top: 0;
+    z-index: 1;
+    margin: 0 auto;
+    height: 3vw;
+    width: 100%;
+    overflow: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--white-color);
+}
+
+#nav-bar>ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+#nav-bar>ul>li {
+    padding: 0 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.heading {
+    font-weight: 100;
+    display: inline-block;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    gap: 2rem;
+    position: relative;
+    margin: auto 1em;
+}
+
+.hero-text {
+    font-size: 5em;
+    color: var(--white-color);
+    font-weight: 100;
+}
+
+.hero-text span {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    display: block;
+    padding-left: 10rem;
+}
+
+.info{
+    display: inline-block;
+    color: var(--white-color);
+    margin: 0 30em;
+    font-family: system-ui;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Why Oura section */
+
+.why-oura {
+    display: flex;
+    height: 100vh;
+}
+
+.hero-img2x {
+    background-image: url("./hero-img2x.jpg");
+    height: 97%;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+.hero-img2x h2 {
+    margin-top: 1em;
+}
+
+.hero-img2x p {
+    display: inline-block;
+}
+
+/* How_It_Works section */
+
+.section-margin {
+    margin: 5rem auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "text vid";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(2, min-content);
+    gap: 2rem;
+    position: relative;
+    margin: auto auto;
+    place-items: center;
+}
+
+.motion-component {
+    font-size: 60px;
+    left: 200px;
+    font-weight: 100;
+}
+
+.motion-component>span {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    display: block;
+    padding-left: 5rem;
+}
+
+.text {
+    display: block;
+    margin: 1em 30em 1em 10em;
+}
+
+.video {
+    margin: 0 10px;
+    width: 98.5%;
+    height: 100%;
+}
+
+.banner-text {
+    display: block;
+    position: relative;
+    top: -40em;
+    left: 5em;
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+.black-color {
+    color: var(--black-color);
+}
+
+.video-parameter {
+    display: inline;
+    width: 34rem;
+    border-radius: 6px;
+}
+
+div.text-area {
+    grid-area: text;
+}
+
+div.video-area {
+    grid-area: vid;
+}
+
+.text-twelve {
+    margin: 2em 2em;
+    font-size: 1.2rem;
+}
+
+.six-pm-text {
+    display: block;
+    position: relative;
+    top: -40em;
+    left: 5em;
+}
+
+/* Shop section */
+
+#Shop {
+    margin: auto;
+}
+
+.header-shop {
+    margin: 50px;
+    text-align: center;
+}
+
+.header-shop>p {
+    padding: 1em;
+}
+
+.card-container {
+    display: block;
+    margin: auto;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 230px;
+    margin: 0.5em 0.5em;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+/* Register section */
+
+#Register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 5rem auto;
+    background-image: url(./oura-ring-4-multi.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -10em;
+}
+
+.reg-wrapper{
+    width: 400px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.input-fields {
+    position: relative;
+    margin: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.input-fields input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.input-fields label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: var(--white-color);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-fields input:focus~label,
+.input-fields input:valid~label {
+    transform: translateY(-120%);
+    font-size: 0.8rem;
+    top: 10px;
+}
+
+.password-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: var(--white-color);
+}
+
+.password-options label {
+    display: flex;
+    align-items: center;
+}
+
+#remember {
+    accent-color: var(--white-color);
+}
+
+.password-options label p {
+    margin: 8px;
+}
+
+.reg-wrapper a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.reg-wrapper a:hover {
+    text-decoration: underline;
+}
+
+#submit {
+    background: var(--white-color);
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#submit:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+
+.account-options {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--white-color);
+}
+
+/* Log In section */
+
+#Log-In {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 5rem auto;
+    background-image: url(./oura-ring-4-multi.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -10em;
+}
+
+@media (max-width: 768px) {
+    #nav-bar>ul>li {
+        padding: 0 10px;
+        font-size: 0.9em;
+    }
+    .hero-text {
+        font-size: 3em;
+    }
+    .info{
+        margin: 0 10em;
+    }
+    .text {
+        margin: 1rem 8em;
+    }
+    .banner-text {
+        top: -25em;
+    }
+    .motion-component {
+        font-size: 3em;
+    }
+    .text-twelve {
+        margin: 2em 2em;
+        font-size: 1rem;
+    }
+    .video-parameter {
+        width: 20rem;
+    }
+    .six-pm-text {
+        top: -25em;
+    }
+    .card {
+        max-width: 150px;
+        margin: 0.5em 0.5em;
+    }
+    .card h1 {
+        font-size: 1em;
+    }
+    #Register {
+        height: 170vh;
+    }
+    .input-fields input {  
+        height: 15px;
+    }
+    .input-fields label {
+        font-size: 0.6rem;
+    }
+    form h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .password-options {
+        margin: 10px 0 15px 0;
+    }
+    .password-options label p {
+        margin: 5px;
+        font-size: 0.6rem;
+    }
+    .reg-wrapper {
+        padding: 10px;
+    }
+    .reg-wrapper a {
+        font-size: 0.6rem;
+    }
+    .account-options {
+        margin-top: 15px;
+    }
+    .account-options p {
+        font-size: 0.6rem;
+    }
+    #submit {
+        padding: 8px 10px;
+    }
+    #Log-In {
+        height: 150vh;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    #nav-bar>ul>li {
+        padding: 0 25px;
+    }
+    .hero-text {
+        font-size: 4em;
+    }
+    .info{
+        margin: 0 15em;
+    }
+    .text {
+        margin: 1rem 8em;
+    }
+    .banner-text {
+        top: -25em;
+    }
+    .text-twelve {
+        margin: 2em 2em;
+    }
+    .card {
+        max-width: 200px;
+        margin: 0.5em 0.5em;
+    }
+    .input-fields input {  
+        height: 30px;
+    }
+    .input-fields label {
+        font-size: 0.8rem;
+    }
+    form h2 {
+        font-size: 1.5rem;
+    }
+    .password-options {
+        margin: 15px 0 20px 0;
+    }
+}
