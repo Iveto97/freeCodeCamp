@@ -24,6 +24,24 @@ const weapons = [
     { name: 'sword', power: 100 },
 ];
 
+const monsters = [
+  {
+    name: "slime",
+    level: 2,
+    health: 15,
+  },
+  {
+    name: "fanged beast",
+    level: 8,
+    health: 60,
+  },
+  {
+    name: "dragon",
+    level: 20,
+    health: 300,
+  },
+];
+
 const locations = [
     {
         name: "town square",
@@ -119,6 +137,10 @@ function sellWeapon() {
   } else {
     text.innerText = "Don't sell your only weapon!";
   }
+}
+
+function goFight() {
+  
 }
 
 function fightSlime() {
