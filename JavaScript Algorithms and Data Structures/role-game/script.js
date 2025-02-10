@@ -182,3 +182,10 @@ function dodge() {
   
 }
 
+function defeatMonster () {
+
+}
+
+function lose() {
+  
+}
