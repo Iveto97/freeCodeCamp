@@ -97,7 +97,7 @@ function update(location) {
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
 
-    text.innerText = location.text;
+    text.innerHTML = location.text;
 }
 
 function goTown() {
@@ -222,4 +222,8 @@ function restart() {
   healthText.innerText = health;
   xpText.innerText = xp;
   goTown();
+}
+
+function winGame() {
+  update(locations[6]);
 }
