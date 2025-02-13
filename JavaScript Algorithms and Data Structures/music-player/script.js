@@ -103,6 +103,15 @@ const playSong = (id) => {
   audio.play();
 };
 
+const pauseSong = () => {
+  userData.songCurrentTime = audio.currentTime;
+
+  playButton.classList.remove("playing");
+  audio.pause();
+};
+
+pauseButton.addEventListener("click", pauseSong);
+
 const renderSongs = (array) => {
   const songsHTML = array
     .map((song) => {
