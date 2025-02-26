@@ -171,3 +171,6 @@ const myFavoriteFootballTeam = {
     },
   ],
 };
+
+Object.freeze(myFavoriteFootballTeam);
+
