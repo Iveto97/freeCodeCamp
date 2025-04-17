@@ -1,0 +1,100 @@
+:root {
+    --black: black;
+    --purple: #8600b3;
+    --white: white;
+    --background: linear-gradient(to right, #f2ccff 0%, #600080 100%);
+  }
+  
+  body {
+    font-family: Georgia, serif;
+    background-color: var(--black);
+  }
+  
+  .title{
+    color: var(--white);
+    text-align: center;
+  }
+  
+  section {
+    margin-top: 5rem;
+  }
+  
+  .container {
+    margin:auto;
+    padding: 0.9px;
+    width: 400px;
+    height: 300px;
+    border-radius: 0.7rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .container::after {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: 0px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(34.5px);
+    background: var(--background);
+    transition: opacity 0.5s;
+  }
+  
+  .container-info {
+    background: var(--black);
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: 0.7rem;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    color: var(--white);
+    font-size: 30px;
+  }
+  
+  .number-input {
+    display: block;
+    margin: auto;
+    padding: 0.8rem;
+    color: var(--white);
+    background-color: var(--black);
+    border: solid var(--purple) 2px;
+    border-radius: 3rem;
+    font-size: 20px;
+  }
+  
+  .number-input::-webkit-outer-spin-button,
+  .number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .number-input:focus {
+     border-color: var(--purple);
+     outline: none;
+  }
+  
+  .convert-btn {
+    margin: 30px;
+    padding: 0.7rem;
+    width: 10rem;
+    border-radius: 50px;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 1rem;
+  }
+  
+  .roman-result {
+    margin:auto;
+    color: var(--white);
+  }
