@@ -1,4 +1,4 @@
-
+const sum = (nums) => nums.reduce((acc, el) => acc + el, 0);
 
 const range = (start, end) =>
   Array(end - start + 1)
