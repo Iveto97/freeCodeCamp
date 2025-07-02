@@ -115,22 +115,31 @@ class ShoppingCart {
 
     const totalCountPerProduct = {};
     this.items.forEach((dessert) => {
-      totalCountPerProduct[dessert.id] = (totalCountPerProduct[dessert.id] || 0) + 1;
-    })
+      totalCountPerProduct[dessert.id] =
+        (totalCountPerProduct[dessert.id] || 0) + 1;
+    });
 
     const currentProductCount = totalCountPerProduct[product.id];
-    const currentProductCountSpan = document.getElementById(`product-count-for-id${id}`);
+    const currentProductCountSpan = document.getElementById(
+      `product-count-for-id${id}`
+    );
 
-    currentProductCount > 1 
-      ? currentProductCountSpan.textContent = `${currentProductCount}x`
-      : productsContainer.innerHTML += `
+    currentProductCount > 1
+      ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
+      : (productsContainer.innerHTML += `
       <div id="dessert${id}" class="product">
         <p>
           <span class="product-count" id="product-count-for-id${id}"></span>${name}
         </p>
         <p>${price}</p>
       </div>
-      `;
+      `);
+  }
+  getCounts() {
+    return this.items.length;
+  }
+  calculateTotal() {
+    const subTotal = this.items.reduce((total, item) => total + item.price, 0);
   }
 };
 
@@ -140,5 +149,12 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
   btn.addEventListener("click", (event) => {
     cart.addItem(Number(event.target.id), products);
+    totalNumberOfItems.textContent = cart.getCounts();
   });
+});
+
+cartBtn.addEventListener("click", () => {
+  isCartShowing = !isCartShowing;
+  showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
+  cartContainer.style.display = isCartShowing ? "block" : "none";
 });
