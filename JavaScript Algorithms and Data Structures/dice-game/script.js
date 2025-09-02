@@ -115,3 +115,24 @@ rulesBtn.addEventListener("click", () => {
     rulesContainer.style.display = "none";
   }
 });
+
+keepScoreBtn.addEventListener("click", () => {
+  let selectedValue;
+  let achieved;
+
+  scoreInputs.forEach((radioButton) => {
+    if (radioButton.checked) {
+      selectedValue = radioButton.value;
+      achieved = radioButton.id;
+    }
+    if (selectedValue) {
+      rolls = 0;
+      round++;
+      updateStats();
+      resetRadioOptions();
+      updateScore(selectedValue, achieved);
+    } else {
+      alert("Please select an option or roll the dice");
+    }
+  });
+});
