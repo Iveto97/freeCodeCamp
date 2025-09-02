@@ -76,6 +76,16 @@ const getHighestDuplicates = (arr) => {
   updateRadioOption(5, 0);
 };
 
+const resetRadioOptions = () => {
+  scoreInputs.forEach((element) => {
+    element.disabled = true;
+    element.checked = false;
+  });
+  scoreSpans.forEach((span) => {
+    span.textContent = "";
+  });
+};
+
 rollDiceBtn.addEventListener("click", () => {
   if (rolls === 3) {
     alert("You have made three rolls this round. Please select a score.");
