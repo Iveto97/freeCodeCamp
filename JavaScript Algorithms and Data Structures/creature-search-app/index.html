@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Alternates' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>RPG Creature Search App</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>RPG Creature Search App</h1>
+            <div class="search-box">
+                <div class="search-icon"><i class="fa fa-search search-icon"></i></div>
+                <form action="" class="search-form">
+                    <input type="text" id="search-input" class="search" placeholder="Search" required>
+                </form>
+                <button id="search-button" class="search-btn">Search</button>
+            </div>
+            <span>Search for Creature Name or ID:</span>
+            <div class="card">
+                <div class="card-left">
+                    <label class="name">Name:
+                        <h3 id="creature-name"></h3>
+                    </label>
+                    <label for="#" class="id">Id: #
+                        <h4 id="creature-id"></h4>
+                    </label>
+                    <div class="size">
+                        <label for="#">Weight:
+                            <span id="weight"></span></label>
+                        <label for="#">Height:
+                            <span id="height"></span></label>
+                    </div>
+                    <div id="types">Type: </div>
+                    <label for="#">Special Skills:
+                        <span id="special-skills" class="special-skills-span"></span></label>
+                    <label for="#">Description:
+                        <p id="description" class="description"></p>
+                    </label>
+                </div>
+                <div class="card-right">
+                    <table class="table-fixed">
+                        <thead>
+                            <tr>
+                                <th>Base</th>
+                                <th>Stats</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Health Points</td>
+                                <td id="hp"></td>
+                            </tr>
+                            <tr>
+                                <td>Attack</td>
+                                <td id="attack"></td>
+                            </tr>
+                            <tr>
+                                <td>Defense</td>
+                                <td id="defense"></td>
+                            </tr>
+                            <tr>
+                                <td>Special Attack</td>
+                                <td id="special-attack"></td>
+                            </tr>
+                            <tr>
+                                <td>Special Defense</td>
+                                <td id="special-defense"></td>
+                            </tr>
+                            <tr>
+                                <td>Speed</td>
+                                <td id="speed"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
