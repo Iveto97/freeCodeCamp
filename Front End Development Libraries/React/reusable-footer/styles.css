@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --purple: #bf80ff;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--white)
+}
+
+footer {
+    background-color: var(--black);
+}
+
+.newsletter {
+    float: left;
+    border: none;
+    background-color: var(--purple);
+    color: var(--black);
+    border-radius: 3px;
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.newsletter p {
+    margin: 5px;
+}
+
+.subscribe-btn {
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    border-color: var(--white);
+}
+
+.services {
+    text-align: center;
+    display: inline-flex;
+    align-items: start;
+    margin-left: 20px;
+}
+
+footer ul {
+    display: inline-block;
+    text-align: left;
+}
+
+footer ul li {
+    list-style: none;
+    margin-right: 50px;
+    padding: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+}
+
+.copyright {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright hr {
+    width: 100%;
+}
+
+.copyright p {
+    display: inline;
+    align-items: start;
+}
+
+.icons {
+    width: 100px;
+    margin-right: 20px;
+    float: right;
+}
+
+.icons a {
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #e6e6e6;
+    --purple: #800080;
+    --vivid-violet: #9900ff; 
+}
+
+body {
+    background: linear-gradient(to left, var(--purple), var(--vivid-violet));
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.container {
+    margin: 50px auto 10px;
+    padding: 20px;
+    width: 70%;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.title {
+    text-align: center;
+    margin: 5px auto 30px
+}
+
+.otp-display {
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.timer {
+    text-align: center;
+    margin: 0px 0px 15px;
+}
+
+.enabledButton {
+    display: block;
+    background-color: var(--purple);
+    color: var(--white);
+    cursor: 'pointer';
+    padding: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.disabledButton {
+    display: block;
+    background-color: gray;
+    color: var(--white);
+    cursor: 'no-drop';
+    padding: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+}
