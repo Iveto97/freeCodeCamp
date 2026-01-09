@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shopping Cart Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <div id="shopping-cart-container"
+            class="flex flex-col lg:flex-row ring-1 ring-gray-300 max-w-6xl rounded-xl mx-auto mt-16 mb-16">
+            <div class="flex-[3_1_auto] justify-center flex-col md:flex-row">
+                <h1 class="block text-4xl font-semibold text-center mx-auto my-4">Shopping Cart</h1>
+                <div class="grid lg:grid-cols-2 sm:grid-cols-1">
+                    <div>
+                        <div id="products-container" class="grid-cols-2 md:grid-rows-3 mx-6">
+                            <div class="grid grid-cols-4 ">
+                                <h1 class="col-span-2 text-base font-medium text-gray-500 my-4">Service</h1>
+                                <h1 class="text-base font-medium text-gray-500 my-4">Quantity</h1>
+                                <h1 class="text-base font-medium text-gray-500 my-4">Price</h1>
+                                <hr class="col-span-4" />
+                            </div>
+                            <div class="card grid grid-cols-4 my-20">
+                                <h2 class="text-base col-span-2"><img
+                                        src="https://images.musicstore.de/images/1600/fame-dd-6600-e-drum-set_1_DRU0038849-000.jpg"
+                                        alt="" class="w-10 h-10 inline-block ring-1"> Fame DD-6600 E-Drum Set</h2>
+                                <div class="grid grid-cols-3 w-20">
+                                    <button
+                                        class="flex text-center text-4xl  h-7 items-center justify-middle">-</button>
+                                    <div class="ring-1 ring-gray-500 rounded-full w-8 h-8">
+                                        <p class="quantity text-center my-1 h-8">1</p>
+                                    </div>
+                                    <button class="text-center text-2xl ml-4  h-8">+</button>
+                                </div>
+                                <div>
+                                    <p class="price inline-block"><span>&euro;</span> 318.50</p>
+                                    <button
+                                        class="remove-button bg-red-600 hover:bg-red-700 rounded-md my-1 p-1 text-white">Remove</button>
+                                </div>
+                            </div>
+                            <div class="card grid grid-cols-4 my-20">
+                                <h2 class="text-base col-span-2"><img
+                                        src="https://images.musicstore.de/images/1600/meinl-mcc22r-pro-cymbal-case-red-22-_1_DRU0043469-000.jpg"
+                                        alt="" class="w-10 h-10 inline-block ring-1"> Meinl Cymbal Case MCC22, 22"</h2>
+                                <div class="grid grid-cols-3 w-20">
+                                    <button class="flex text-center text-4xl h-7 items-center justify-middle">-</button>
+                                    <div class="ring-1 ring-gray-500 rounded-full w-8 h-8">
+                                        <p class="block quantity text-center my-1 h-8">2</p>
+                                    </div>
+                                    <button class="text-center text-2xl ml-4 h-8">+</button>
+                                </div>
+                                <div>
+                                    <p class="price inline-block"><span>&euro;</span> 126.50</p>
+                                    <button
+                                        class="remove-button bg-red-600 hover:bg-red-700 rounded-md my-1 p-1 text-white">Remove</button>
+                                </div>
+                            </div>
+                            <div class="card grid grid-cols-4 my-20">
+                                <h2 class="text-base col-span-2"><img
+                                        src="https://images.musicstore.de/images/0960/monzani-gold-maple-set-3-4_1_GIT043.jpg"
+                                        alt="" class="w-10 h-10 inline-block ring-1"> Monzani Gold Maple 3/4 guitar</h2>
+                                <div class="grid grid-cols-3 w-20">
+                                    <button
+                                        class="flex text-center text-4xl  h-7 items-center justify-middle">-</button>
+                                    <div class="ring-1 ring-gray-500 rounded-full w-8 h-8">
+                                        <p class="quantity text-center my-1 h-8">1</p>
+                                    </div>
+                                    <button class="text-center text-2xl ml-4 h-8">+</button>
+                                </div>
+                                <div>
+                                    <p class="price inline-block"><span>&euro;</span> 167.20</p>
+                                    <button
+                                        class="remove-button bg-red-600 hover:bg-red-700 rounded-md my-1 p-1 text-white">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="order-summary-container" class="ml-4 rounded-none border-none">
+                            <h2 class="text-base">Order Summary</h2>
+                            <div class="grid grid-cols-4 my-4">
+                                <p class="col-span-3 font-semibold text-[20px] text-gray-300">Subtotal</p>
+                                <p class="price font-semibold text-[20px]"><span>&euro;</span> 738.70</p>
+                            </div>
+                            <div>
+                                <div class="grid grid-cols-4 my-4">
+                                    <p class="col-span-3 font-semibold text-[20px] text-gray-300 ">Delivery Charge</p>
+                                    <p class="price text-[20px]"><span>&euro;</span> 30.00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="grid grid-cols-4 my-4">
+                                    <p class="col-span-3 font-semibold text-2xl text-1xl" id="total">Total:</p>
+                                    <p class="font-semibold text-[20px] text-indigo-600" id="total-amount">
+                                        <span>&euro;</span> 768.70</p>
+                                </div>
+                            </div>
+                            <a href="#" class="block text-center justify-center bg-blue-500 hover:bg-blue-700 text-white p-1 m-2">Checkout</a>
+                        </div>
+                    </div>
+                    <div class="bg-black rounded-xl mx-20 my-10 p-6">
+                        <h1 class="text-white mb-6 text-2xl">Payment Info</h1>
+                        <p class="text-slate-500 font-semibold  mb-5">Payment Method:</p>
+                        <div class="my-2 flex items-center">
+                            <div class="flex items-center mb-2 mr-10">
+                                <label class="relative flex items-center cursor-pointer" for="card">
+                                    <input name="framework" type="radio"
+                                        class="peer h-6 w-6 cursor-pointer appearance-none rounded-full border border-white checked:border-white-400 transition-all"
+                                        id="card" checked="">
+                                    <span
+                                        class="absolute bg-white w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-3 transform -translate-x-1/2 -translate-y-1/2">
+                                    </span>
+                                </label>
+                                <label class="ml-2 text-white cursor-pointer text-1xl" for="card">Credit Card</label>
+                            </div>
+                            <div class="flex items-center  mb-2">
+                                <label class="relative flex items-center cursor-pointer" for="pay-pall">
+                                    <input name="framework" type="radio"
+                                        class="peer h-6 w-6 cursor-pointer appearance-none rounded-full border border-white-300 checked:border-white-400 transition-all"
+                                        id="pay-pall">
+                                    <span
+                                        class="absolute bg-white w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-3 transform -translate-x-1/2 -translate-y-1/2">
+                                    </span>
+                                </label>
+                                <label class="ml-2 text-white cursor-pointer text-1xl" for="pay-pall">Pay Pall</label>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-slate-500 font-semibold  mb-5">Name On Card:</p>
+                            <input type="text"
+                                class="  text-white border-b-2  border-b-gray-600 focus:border-b-gray-600  outline-none focus:outline-none text-slate-500 bg-transparent w-full"
+                                placeholder="Ronald Richards">
+                        </div>
+                        <div class="my-6">
+                            <p class="text-slate-500 font-semibold  mb-5">Card Number:</p>
+                            <input type="text"
+                                class="  text-white border-b-2  border-b-gray-600 focus:border-b-gray-600  outline-none focus:outline-none text-slate-500 bg-transparent w-full"
+                                placeholder="2012 1203 2154 2000">
+                        </div>
+                        <div class="my-6 grid grid-cols-3 w-full">
+                            <div class="col-span-2">
+                                <p class="text-slate-500 font-semibold  mb-5">Expiry Date</p>
+                                <select name="" id=""
+                                    class="bg-transparent text-white border-b-2 border-b-gray-600 w-20 focus:outline-none peer">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <select name="" id=""
+                                    class="bg-transparent text-white border-b-2 border-b-gray-600 w-20 focus:outline-none peer">
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p class="text-slate-500 font-semibold  mb-5">CVV</p>
+                                <input type="text"
+                                    class="  text-white border-b-2  border-b-gray-600 focus:border-b-gray-600  outline-none focus:outline-none text-slate-500 bg-transparent w-20"
+                                    placeholder="214">
+                            </div>
+                        </div>
+                        <div class="flex items-center mb-2 mr-10">
+                            <label class="relative flex items-center cursor-pointer" for="card">
+                                <input name="save" type="radio"
+                                    class="peer h-6 w-6 cursor-pointer appearance-none rounded-full border border-white checked:border-white-400 transition-all"
+                                    id="card" checked="">
+                                <span
+                                    class="absolute bg-white w-3 h-3 rounded-full opacity-0 peer-checked:opacity-100 transition-opacity duration-200 top-1/2 left-3 transform -translate-x-1/2 -translate-y-1/2">
+                                </span>
+                            </label>
+                            <label class="ml-2 text-slate-300 cursor-pointer text-sm" for="card">Save Payment On
+                                File</label>
+                        </div>
+                        <div>
+                            <button class="text-white bg-indigo-600 w-full my-10 p-3 rounded-md">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
