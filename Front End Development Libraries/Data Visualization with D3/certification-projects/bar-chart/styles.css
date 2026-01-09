@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.bars {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+}
+
+.more {
+    margin: 0.63rem;
+}

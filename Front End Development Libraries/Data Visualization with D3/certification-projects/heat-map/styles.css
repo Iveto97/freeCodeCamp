@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategray;
+    padding: 3rem;
+}
+
+.title-container {
+    padding: 1rem;
+}
+
+#title {
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#description {
+    color: white;
+    text-align: center;
+}
+
+.svg {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 4px;
+    background: #090e0d;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #fffdfd;
+}

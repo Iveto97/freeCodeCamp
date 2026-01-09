@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.svg {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#title {
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
+
+.tradewind {
+    fill: #69b3a2;
+}
+
+.blue {
+    fill: #404080;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 4px;
+    background: #e1f0ec;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+}
