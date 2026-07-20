@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lightbox Viewer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main>
+    <h1 class="title">&#x1F3A8; Lightbox Viewer</h1>
+    <div class="gallery">
+      <div class="column">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/stonehenge-thumbnail.jpg" alt="Stonehenge, England"
+          class="gallery-item">
+      </div>
+      <div class="column">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/storm-thumbnail.jpg" alt="Snowstorm, Mont Cenis"
+          class="gallery-item">
+      </div>
+      <div class="column">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/trees-thumbnail.jpg" alt="Driving Home The Flock"
+          class="gallery-item">
+      </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button id="close-btn" class="close-btn" aria-label="Close lightbox">&times;</button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-slide">
+          <div class="number-text"></div>
+          <img id="lightbox-image" src="" class="lightbox-image">
+        </div>
+
+        <button class="prev" aria-label="Previous image">&#10094;</button>
+        <button class="next" aria-label="Next image">&#10095;</button>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="demo-images">
+          <div class="column">
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/stonehenge-thumbnail.jpg" alt="Stonehenge, England"
+              class="demo">
+          </div>
+          <div class="column">
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/storm-thumbnail.jpg" alt="Snowstorm, Mont Cenis"
+              class="demo">
+          </div>
+          <div class="column">
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/trees-thumbnail.jpg" alt="Driving Home The Flock"
+              class="demo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
