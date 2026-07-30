@@ -7,7 +7,7 @@
 }
 
 :root {
-    --dark-grey: #0a0a23;
+    --dark-grey: #cccccc;
     --light-grey: #f5f6f7;
     --white: #ffffff;
     --black: #000;
@@ -42,11 +42,23 @@ footer {
     font-size: 1.2rem;
 }
 
+.players {
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #0C198E;
+    border-radius: 5px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.team-logo {
+    width: 50px;
 }
 
 .player-card {
@@ -55,6 +67,16 @@ footer {
     margin: 1.2rem;
     width: 300px;
     border-radius: 15px;
+    border: 2px solid #0C198E;
+}
+
+.player-card h2 {
+    font-weight: 500;
+}
+
+.player-card p {
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
