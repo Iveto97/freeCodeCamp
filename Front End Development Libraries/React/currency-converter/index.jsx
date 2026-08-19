@@ -21,9 +21,9 @@ export function CurrencyConverter() {
   const calculation = useMemo(() => {
     return (
       amount *
-      (currencies[fromCurrency] / currencies[toCurrency])
+      (currencies[toCurrency] / currencies[fromCurrency])
     ).toFixed(2);
-  }, [fromCurrency, amount]);
+  }, [fromCurrency, amount, toCurrency]);
 
   const handleSetFirstCur = useCallback((e) => {
     setFromCurrency(e.target.value);
@@ -44,6 +44,7 @@ export function CurrencyConverter() {
     const currency = fromCurrency;
     setFromCurrency(toCurrency);
     setToCurrency(currency);
+    setResult("");
   };
 
   return (
